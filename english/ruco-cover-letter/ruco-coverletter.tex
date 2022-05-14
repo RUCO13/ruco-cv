@@ -1,0 +1,141 @@
+% !TEX TS-program = lualatex
+%%!TEX TS-program = xelatex
+%%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\fontspec[ Path = fonts/]{FontAwesome.ttf}
+% Specify the location of the included fonts
+%\fontdir[/media/labfiles/ruco/cv/ruco-cover-letter/fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|refctangle,edge/noedge,left/right
+\photo[circle,noedge,left]{../Foto}
+\name{Ruiz-Cigarrillo}{Oscar}
+\position{PhD student at Universidad Aut\'onoma de San Luis Potos\'i, Instituto de Investigaci\'on en Comunicaci\'on \'Optica}
+\address{Av Karakorum 1470, Lomas 4ta Secc, 78210 San Luis, S.L.P. M\'exico}
+
+\mobile{(+52) 4442384382}
+\email{ruizoscar.1393@gmail.com}
+%\homepage{www.posquit0.com}
+\github{RUCO13}
+\googlescholar{d5ygTH8AAAAJ}{O Ruiz-Cigarrillo}
+\twitter{@ruco0713}
+%\linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{``In the depth of winter, I finally learned that within me there lay an invincible summer."\\ -Albert Camus}
+
+
+%-------------------------------------------------------------------------------
+%%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Center for Quantum Nanoscience}
+  {52 Ewhayeodae-gil,Daehyeon-dong, Seodaemun-gu, 03760 Seoul, South Korea}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the leapplicationtter
+\lettertitle{Postdoc Application}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr. }
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Oscar Ruiz-Cigarrillo~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a persevering person with great interest in learning. I am the first graduate of my family and my parents' two families, and the first scientist in my community. That is why I have always been interested in sharing my knowledge and learning anything that makes me curious. My grandfather was a garbage collector, and he always gave me the books he found, especially the science ones, he called me a mad scientist. Because of this, I love physics and grew up wanting to be a scientist. My desires were reinforced thanks to my professors, who shared their knowledge with me. At the beginning of my PhD project I had to deal with many problems with the experimental system, this taught me the value of teamwork, discipline, and the effort that research deserves. In addition, I decided to link it with another of my interests, programming, and everything related to the open-source world. I consider computational physics to be one of the most powerful tools in experimental physics, the knowledge obtained by the laboratory and the models developed by the theory are the seed to understand physics.
+
+\lettersection{Why QNS?}
+I was following the research developed at QNS and attracts me your interest of quantum research. Furthermore, I consider that can you give me knowledge, tools, friends, and colleagues with whom to develope new and innovation quantum nanoscience tools and knowledge. 
+Nowadays, at the finishes of my PhD I'm very interested to research quantum and topological behavior in nanostructures, the results of my PhD work they have taken me to focussed to understand spin behavior. 
+The cultural relation is another important aspect that I considered to choice QNS, unfortunately I had several cases of racism along of my academical formation and this  caused disappointment to fulfill my dreams.  The physics doesn't consider gender, skin color or preferences, their research is free and must be shared. 
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
