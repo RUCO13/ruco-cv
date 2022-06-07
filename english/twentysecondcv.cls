@@ -2,9 +2,9 @@
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 %	 REQUIRED PACKAGES
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 \RequirePackage[spanish]{babel}
 \RequirePackage[sfdefault]{ClearSans}
 \RequirePackage[T1]{fontenc}
@@ -23,13 +23,13 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 %	 COLOURS
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 
 \definecolor{white}{RGB}{255,255,255}
 \definecolor{gray}{HTML}{4D4D4D}
-\definecolor{sidecolor}{HTML}{E7E7E7}
+\definecolor{sidecolor}{HTML}{C2F8F6}
 \definecolor{mainblue}{HTML}{0E5484}
 \definecolor{maingray}{HTML}{B9B9B9}
 
@@ -72,6 +72,8 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+\newcommand{\cvsited}[1]{\renewcommand{\cvsited}{#1}}
+
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
@@ -157,6 +159,7 @@
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\large\icon{\faMapMarker}} & \cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\large\icon{\faPhone}} & \cvnumberphone\\}
 			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\large\icon{\Mundus}} & \cvsite\\}
+			\ifthenelse{\equal{\cvsited}{}}{}{\textsc{\large\icon{\Mundus}} & \cvsited\\}
 			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{\faAt}} & \href{mailto:\cvmail}{\cvmail}}
 		\end{tabular}
 
