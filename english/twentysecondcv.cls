@@ -19,7 +19,15 @@
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
 \RequirePackage{fontawesome}
-
+\RequirePackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 
@@ -71,7 +79,13 @@
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
+<<<<<<< HEAD
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+=======
+\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{\url{#1}}}
+\newcommand{\cvsited}[1]{\renewcommand{\cvsited}{\url{#1}}}
+
+>>>>>>> 8ce7eb2d272a83a31756d61b560da0e1f310581f
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
