@@ -2,11 +2,11 @@
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 
-%--------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	 REQUIRED PACKAGES
-%--------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 \RequirePackage[spanish]{babel}
-\RequirePackage[sfdefault]{ClearSans}
+% \RequirePackage[sfdefault]{ClearSans}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
@@ -23,13 +23,13 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 
-%--------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	 COLOURS
-%--------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 
 \definecolor{white}{RGB}{255,255,255}
 \definecolor{gray}{HTML}{4D4D4D}
-\definecolor{sidecolor}{HTML}{C2F8F6}
+\definecolor{sidecolor}{HTML}{E7E7E7}
 \definecolor{mainblue}{HTML}{0E5484}
 \definecolor{maingray}{HTML}{B9B9B9}
 
@@ -59,11 +59,11 @@
 \newlength{\SectionTitleLength} % Define a new length to hold the width of the section title
 \newcommand{\profilesection}[1]{%
 	\setlength\TotalSectionLength{\linewidth}% Set the total line width
-	\settowidth{\SectionTitleLength}{\huge #1 }% Calculate the width of the section title
+	\settowidth{\SectionTitleLength}{\Large #1 }% Calculate the width of the section title
 	\addtolength\TotalSectionLength{-\SectionTitleLength}% Subtract the section title width from the total width
 	\addtolength\TotalSectionLength{-2.22221pt}% Modifier to remove overfull box warning
 	\vspace{8pt}% Whitespace before the section title
-	{\color{black!80} \huge #1 \rule[0.15\baselineskip]{\TotalSectionLength}{1pt}}% Print the title and auto-width rule
+	{\color{black!80} \Large #1 \rule[0.15\baselineskip]{\TotalSectionLength}{1pt}}% Print the title and auto-width rule
 }
 
 % Define custom commands for CV info
@@ -72,8 +72,6 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
-\newcommand{\cvsited}[1]{\renewcommand{\cvsited}{#1}}
-
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
@@ -138,19 +136,20 @@
 			\begin{center}
 				\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
 					\clip (600/2, 567/2) circle (567/2);
-					\node[anchor=north west, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=\imagewidth]{\profilepic}};
+					\node[anchor=north west, inner sep=0pt, outer sep=0pt,xshift=0mm] at (0,0) {\includegraphics[width=\imagewidth]{\profilepic}};
 				\end{tikzpicture}
 			\end{center}
 		}
 
 		%------------------------------------------------
-
-		{\Huge\color{mainblue}\cvname}
+		\begin{center}
+			{\Large\color{mainblue}\cvname}
+		\end{center}
 
 		%------------------------------------------------
-
-		{\Large\color{black!80}\cvjobtitle}
-
+		\begin{center}
+			{\large\color{black!80}\cvjobtitle}
+		\end{center}
 		%------------------------------------------------
 
 		\renewcommand{\arraystretch}{1.6}
@@ -158,8 +157,7 @@
 			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\icon{\faBirthdayCake}} & \cvdate\\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\large\icon{\faMapMarker}} & \cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\large\icon{\faPhone}} & \cvnumberphone\\}
-			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\large\icon{\Mundus}} & \cvsite\\}
-			\ifthenelse{\equal{\cvsited}{}}{}{\textsc{\large\icon{\Mundus}} & \cvsited\\}
+			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\large\icon{\Mundus}} & \href{\cvsite}{Oscar's Web}\\}
 			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{\faAt}} & \href{mailto:\cvmail}{\cvmail}}
 		\end{tabular}
 
@@ -206,15 +204,15 @@
 		\round{#1}{
 			\ifcase\value{colorCounter}%
 			mainblue\or%
-			maingray\or%
 			mainblue\or%
-			maingray\or%
 			mainblue\or%
-			maingray\or%
 			mainblue\or%
-			maingray\or%
+			mainblue\or%
+			mainblue\or%
+			mainblue\or%
+			mainblue\or%
  			mainblue\or%
-			maingray\else%
+			mainblue\else%
 			mainblue\fi%
 		}%
 	}%
@@ -250,9 +248,9 @@
 
 \newcommand{\twentyitem}[4]{%
 	#1&\parbox[t]{0.83\textwidth}{%
-		\textbf{#2}%
+		\textbf{\color{blue}#2}%
 		\hfill%
-		{\footnotesize#3}\\%
+		{\footnotesize\textbf{#3}}\\%
 		#4\vspace{\parsep}%
 	}\\
 }
@@ -283,3 +281,9 @@
 \RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
 
 \RequirePackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,     % Color para enlaces internos (secciones, figuras, tablas, etc.)
+    urlcolor=blue,       % Color para enlaces URL
+    citecolor=green,    % Color para enlaces de referencias cruzadas (citas bibliográficas, por ejemplo)
+}

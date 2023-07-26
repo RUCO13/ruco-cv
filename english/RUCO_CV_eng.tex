@@ -19,7 +19,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\documentclass[letterpaper,dvipsnames]{twentysecondcv} % a4paper for A4
 
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
@@ -27,15 +27,15 @@
 
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\profilepic{foto}
-\cvname{Oscar Ruiz\\ Cigarrillo} % Your name
-\cvjobtitle{PhD. Candidate in Applied Sciences} % Job title/career
+\profilepic{../figures/phd.png}
+\cvname{Oscar Ruiz-Cigarrillo} % Your name
+\cvjobtitle{Ph.D. Photonics} % Job title/career
 
 \cvdate{July 13th 1993} % Date of birth
 \cvaddress{San Luis Potos\'i, M\'exico} % Short address/location, use \newline if more than 1 line is required
 \cvnumberphone{+52 4442384382} % Phone number
-\cvsite{https://github.com/RUCO13} % Personal website
-\cvsited{https://wakatime.com/@RUCO13} % Personal website
+%\cvsite{https://github.com/RUCO13} % Personal website
+\cvsite{https://ruco13.github.io} % Personal website
 \cvmail{ruizoscar.1393@gmail.com} % Email address
 
 %----------------------------------------------------------------------------------------
@@ -53,7 +53,7 @@
 %----------------------------------------------------------------------------------------
 
 % Skill bar section, each skill must have a value between 0 an 6 (float)
-\skills{{MATLAB/6},{Mathematica/6},{C/5},{Julia/5},{C++/5},{\LaTeX/6},{Fortran/6},{Python/6},{DFT packages/5},{Linux, MacOs, Windows/6}}
+\skills{{MATLAB/6},{Mathematica/6},{C/5},{Julia/5},{C++/5},{\LaTeX/6},{Fortran/6},{Python/6},{DFT packages/5},{Linux, MacOs/6}}
 
 \lang{{Spanish/6},{English/5}}
 
@@ -71,15 +71,16 @@
 \section{Education}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2017-2021}{PhD candidate in Applied Science (Photonics)}
+	\twentyitem{2017-2021}{PhD in Applied Science (Photonics)}
 	                       {\\Universidad Aut\'onoma de San Luis Potos\'i, M\'exico}
-	                       {\emph{``Optical anisotropy study in coupled quantum wells, a novel source of undisturbed systems''}}
+	                       {\emph{``Coupled Quantum Wells as a Novel Source of Optical Anisotropies in
+						   Nanostructured Systems''}}
 	\twentyitem{2015-2017}{Master degree in Applied Science (Photonics)}
 	                      {\\Universidad Aut\'onoma de San Luis Potos\'i, M\'exico}
 	                      {\emph{``Growth and Characterization of Semiconductor Optical \\ Microcavities''}}
 	\twentyitem{2011-2015}{Bachelor degree in physics engineering}
 	                      {\\Universidad Aut\'onoma de San Luis Potos\'i, M\'exico}
-	                      {Grade: 9.2/10}
+	                      {}
 	
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
@@ -93,38 +94,45 @@
 \section{Publications}
 
 \begin{twentyshort} % Environment for a short list with no descriptions
-	\twentyitemshort{2017}{{\color{blue}``Optical detection of graphene nanoribbons synthesized on stepped SiC surfaces''}\\
-	                        L.F. Lastras-Mart{\'\i}nez, J. Almendarez-Rodr{\'\i}guez, G. Flores-Rangel, N.A. Ulloa-Castillo, {\color{black} O. Ruiz-Cigarrillo}, C.A. Ibarra-Becerra , R. Castro-Garc{\'\i}a, R.E. Balderas-Navarro, M.H. Oliveira Jr and  J.M.J Lopes, \textit{Journal of Applied Physics} \textbf{122(3)},  035701, (2017)}
+	% \twentyitemshort{2017}{{\color{blue}``Optical detection of graphene nanoribbons synthesized on stepped SiC surfaces''}\\
+	%                         L.F. Lastras-Mart{\'\i}nez, J. Almendarez-Rodr{\'\i}guez, G. Flores-Rangel, N.A. Ulloa-Castillo, {\color{black} O. Ruiz-Cigarrillo}, C.A. Ibarra-Becerra , R. Castro-Garc{\'\i}a, R.E. Balderas-Navarro, M.H. Oliveira Jr and  J.M.J Lopes, \textit{Journal of Applied Physics} \textbf{122(3)},  035701, (2017)\\}
 
 
-   	\twentyitemshort{2017}{{\color{blue}``Microscopic optical anisotropy of exciton-polaritons in a GaAs-based semiconductor microcavity''}\\
-   	L.F. Lastras-Mart{\'\i}nez, E. Cerda-M\'endez, N.A. Ulloa-Castillo,R. Herrera-Jasso, L. E. Rodríguez-Tapia, {\color{black} O. Ruiz-Cigarrillo}, R. Castro-Garc\'ia, K. Biermann, P. V. Santos. \textit{Physical Review B},\textbf{ 2017, vol. 96, no 23, p. 235306}}
+   	% \twentyitemshort{2017}{{\color{blue}``Microscopic optical anisotropy of exciton-polaritons in a GaAs-based semiconductor microcavity''}\\
+   	% L.F. Lastras-Mart{\'\i}nez, E. Cerda-M\'endez, N.A. Ulloa-Castillo,R. Herrera-Jasso, L. E. Rodríguez-Tapia, {\color{black} O. Ruiz-Cigarrillo}, R. Castro-Garc\'ia, K. Biermann, P. V. Santos. \textit{Physical Review B},\textbf{ 2017, vol. 96, no 23, p. 235306}\\}
    
-   	\twentyitemshort{2019}{{\color{blue}``Differential reflectance contrast technique in near field limit: Application to graphene''}\\
-   	 L.F. Lastras-Mart{\'\i}nez, D. Medina-Escobedo, G. Flores-Rangel, R.E. Balderas-Navarro, {\color{black} O. Ruiz-Cigarrillo}, R. Castro-Garc{\'\i}a,
-   	 M. del P. Morales-Morelos, J. Ortega-Gallegos, M. Losurdo. \textit{ AIP Advances},\textbf{ 2019, vol. 9, no 4, p. 045309}}
+   	% \twentyitemshort{2019}{{\color{blue}``Differential reflectance contrast technique in near field limit: Application to graphene''}\\
+   	%  L.F. Lastras-Mart{\'\i}nez, D. Medina-Escobedo, G. Flores-Rangel, R.E. Balderas-Navarro, {\color{black} O. Ruiz-Cigarrillo}, R. Castro-Garc{\'\i}a,
+   	%  M. del P. Morales-Morelos, J. Ortega-Gallegos, M. Losurdo. \textit{ AIP Advances},\textbf{ 2019, vol. 9, no 4, p. 045309}\\}
     
-    \twentyitemshort{2021}{{\color{blue}``Optical contrast in the near-field limit for structural characterization of graphene nanoribbons''}\\
-    	 G. Flores-Rangel, L.F. Lastras-Mart{\'\i}nez, R. Castro-Garc{\'\i}a, {\color{black} O. Ruiz-Cigarrillo}, R.E. Balderas-Navarro, L.D.Espinosa-Cuellar A.Lastras-Martínez, J.M.J.Lopes. \textit{ AIP Advances},\textbf{ Volume 536, 15 January 2021, 147710}}
+    % \twentyitemshort{2021}{{\color{blue}``Optical contrast in the near-field limit for structural characterization of graphene nanoribbons''}\\
+    % 	 G. Flores-Rangel, L.F. Lastras-Mart{\'\i}nez, R. Castro-Garc{\'\i}a, {\color{black} O. Ruiz-Cigarrillo}, R.E. Balderas-Navarro, L.D.Espinosa-Cuellar A.Lastras-Martínez, J.M.J.Lopes. \textit{ AIP Advances},\textbf{ Volume 536, 15 January 2021, 147710}\\}
      
-    \twentyitemshort{2021}{{\color{blue}``Optical anisotropies of asymmetric double GaAs (001) quantum wells''}\\
-     {\color{black}O. Ruiz-Cigarrillo}, L. F. Lastras-Mart\'{\i}nez, E. A.
-     Cerda-M\'endez, et al. \textit{Physical Review B},\textbf{ 2021, vol. 103, no 3, p. 035309.}}
-	 \twentyitemshort{2022}{{\color{blue}`Photoluminescence of double quantum wells: asymmetry and excitation laser wavelength effects''}\\
-	 C. A. Bravo-Velázquez,L. F. Lastras-Mart\'{\i}nez{\color{black}O. Ruiz-Cigarrillo}, et al. \textit{physica status solidi (b)},\textbf{  2022, vol. 259, issue 4.}}
+    % \twentyitemshort{2021}{{\color{blue}``Optical anisotropies of asymmetric double GaAs (001) quantum wells''}\\
+    %  {\color{black}O. Ruiz-Cigarrillo}, L. F. Lastras-Mart\'{\i}nez, E. A.
+    %  Cerda-M\'endez, G. Flores-Rangel, R.E. Balderas-Navarro, A. Lastras-Mart\'inez, K. Biermann, P.V. Santos. \textit{Physical Review B},\textbf{ 2021, vol. 103, no 3, p. 035309.}\\}
+
+	%  \twentyitemshort{2022}{{\color{blue}`Photoluminescence of double quantum wells: asymmetry and excitation laser wavelength effects''}\\
+	%  C. A. Bravo-Velázquez, L. F. Lastras-Mart\'{\i}nez, {\color{black}O. Ruiz-Cigarrillo}, G. Flores-Rangel, L.E. Tapia-Rodriguez, K. Biermann, P.V. Santos. \textit{physica status solidi (b)},\textbf{  2022, vol. 259, issue 4.}\\}
    
+	%  \twentyitemshort{2023}{{\color{blue}``Spin relaxation of conduction electrons in coupled quantum wells''}\\
+	%  C. A. Bravo-Velázquez, L. F. Lastras-Mart\'{\i}nez, {\color{black}O. Ruiz-Cigarrillo}, G. Flores-Rangel, L.E. Tapia-Rodriguez, K. Biermann, P.V. Santos. \textit{Physical Review B,},\textbf{ 2023, vol. 108, no 4, p. 045306.}}
 	%\twentyitemshort{<dates>}{<title/description>}
+	\input{../data/publications_list.tex}
 \end{twentyshort}
 
+\newpage 
+\makeprofile 
 \section{Awards}
 
 \begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{2015}{Master Degree, CONACYT fellowship}
+	\twentyitemshort{2017}{Ph.D. Degree, CONACYT fellowship}
 	\twentyitemshort{2017}{Third place, Research level in the poster competition Teaching and Research 2017 "Fis. Candelario Pérez Rosales", XVII Week}
 	\twentyitemshort{2018}{Third place, Research level in the poster competition Teaching and Research 2018 "Fis. Candelario Perez Rosales", XVIII Semana.}
+	\twentyitemshort{2022}{Second place, Teaching level in the poster competition Teaching and Research 2018 "Fis. Candelario Perez Rosales", XXII Semana.}
 	%\twentyitemshort{<dates>}{<title/description>}
 \end{twentyshort}
-\newpage 
-\makeprofile 
 %----------------------------------------------------------------------------------------
 %	 AWARDS
 %----------------------------------------------------------------------------------------
@@ -132,7 +140,7 @@
 %	 EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
+\section{Academic Experience}
 
 \begin{twenty} % Environment for a list with descriptions
 	\twentyitem{2017}{Complex Variable, Electromagnetism}
@@ -141,26 +149,51 @@
 	
 	\twentyitem{2017}{Creating and Editing Scientific Documents in LaTeX: Basic Course
 		Complex Variable, Electromagnetism}
-	{UASLP}
+	{\\UASLP}
 	{Course}
 	
 	\twentyitem{2017}{Physics}
-	{\\Secondary level}
+	{\\Secondary Education}
 	{Professor}
 	
-	\twentyitem{2019-present}{Calculus (Difference and Integral), Physics I, Physics II, Probability and Statistics, Mathematics I (Algebra), Mathematics III (Analytic Geometry) }
-	{\\High School level}
-	{Professor}
 	
-	\twentyitem{2019-present}{Programming,Numerical Methods, Operating Systems, Calculus (Differential  and Integral), Physics I, Physics II, Probability and Statistics, Advanced Algebra}
-	{\\University level}
-	 {Professor}
+	\twentyitem{2019-present}{Physics Introduction, Physics 1, Thermodynamics}
+	{\\Universidad Politécnica de San Luis Potosí}
+	{Professor}
 	
 \end{twenty}
 
+\section{Programming Experience}
 
+Experienced in software development with a focus on two key areas. Firstly, proficient in using DFT (Density Functional Theory) code calculators to investigate semiconductor properties like electronic, magnetic, and optical characteristics. Skilled in \emph{Python, Julia}, and \emph{Fortran} to create efficient computational tools.
 
-\section{Participation National Conferences}
+Secondly, adept at developing codes for experimental projects, including instrumentation interfaces and data analysis. Successfully bridging the gap between theoretical simulations and practical laboratory work.
+
+I also take pride in being the creator of an institutional repository for the \href{https://github.com/NanophotonIICOs}{Nanophotonics group} at the Instituto de Investigaci\'on en Comunicaci\'on \'Optica, Universidad Aut\'onoma de San Luis Potos\'i .
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2018}{cqws-codes}
+	{\\Solution of 1D Schrodinger equation in Coupled Quantum Wells}
+	{\url{https://github.com/NanophotonIICOs/cqws-codes}}
+	\twentyitem{2018}{bash-scripts}
+	{\\This repo holds the bash scripts tools used in this research group}
+	{\url{https://github.com/NanophotonIICOs/bash-scripts}}
+	\twentyitem{2022}{bash-scripts}
+	{\\This repository contains O. Ruiz-Cigarrillo's PhD Thesis	}
+	{\url{https://github.com/RUCO13/ruco-phd-project}}
+
+	\twentyitem{2022}{atomistiico}
+	{\\Repository to analyzing atomistic simulations from DFTs and many-body quantum models. This repository is developed as Aislinn's bachelor thesis.	}
+	{\url{https://github.com/NanophotonIICOs/atomistiico}}
+
+	\twentyitem{2022}{iico-spectra}
+	{\\This repository provides a Graphical User Interface (GUI) for conducting spectroscopy experiments using an Ocean Optics spectrometer. The GUI is designed to be user-friendly and intuitive, allowing researchers to easily interact with the spectrometer.}
+	{\url{https://github.com/NanophotonIICOs/iico-spectra}}
+\end{twenty}
+
+\newpage
+\makeprofile 
+\section{Conference Participation}
 
 \begin{twenty} % Environment for a list with descriptions
 	\twentyitem{2016}{National Physics Congress}
@@ -171,12 +204,6 @@
    {\\ Advances in III-V microcavity growth for solid-state quantum condensates}
    {Poster}
   
-
-\end{twenty}
-
-
-
-\begin{twenty}
 	  	\twentyitem{2017}{National Physics Congress}
 	{\\ In-situ and real-time optical growth and characterization of (Al,Ga)As microcavities.
 		National Physics Congress
@@ -190,13 +217,70 @@
 \twentyitem{2019}{Solid State Division Annual Meeting}
 	{\\Study of Indirect Excitons and Trions in coupled asymmetric quantum wells}
 	{Poster}
+
+
+	\twentyitem{2020}{IOP QUANTUM 2020}
+	{\\A virtual Conference }
+	{Attendance}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\section{Science Comunication}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2017}{Open Doors 2017, Engineering Postgraduate Programs Within Your Reach}
+	{\\Event Organizer}
+	{Universidad Autónoma de San Luis Potosí}
+	\twentyitem{2022}{Evaluator of the Presented Works at the 10th Meeting of Young Researchers in the State of San Luis Potosi}
+	{\\Scientific and Technological Fair}
+	{Universidad Autónoma de San Luis Potosí}
+	\twentyitem{2023}{The Importance of Computational Physics in Information Technologies}
+	{\\Conference-Research Forum 2023}
+	{Universidad Politécnica de San Luis Potosí}
 \end{twenty}
 
 
 
+
+
+\section{Courses and Certifications}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2014}{Advanced Summer School 2014 of the Physics Department, Center for Research and Advanced Studies of the National Polytechnic Institute}
+	{\\Summer School}
+	{CINVESTAV-IPN}
+
+	\twentyitem{2014}{XI Summer School in Mathematics}
+	{\\Summer School}
+	{Unidad Cuernavaca del Instituto de Matemáticas UNAM}
+
+	\twentyitem{2015}{Ellipsometry School}
+	{\\Summer School}
+	{IICO-UASLP}
+	\twentyitem{2021}{Development of Teaching Competencies: Didactic Planning and Instructional Design}
+	{\\Course}
+	{Universidad Politécnica de San Luis Potosí}
+	\twentyitem{2021}{Hands-On Start to Wolfram Mathematica}
+	{\\Course}
+	{Wolfram Research inc}
+	\twentyitem{2022}{Updating Scenarios for the Return to Hybrid Classes}
+	{\\Course}
+	{MICROSOFT MEXICO S.A. DE C.V}
+	\twentyitem{2023}{Python 101 for Data Science}
+	{\\A course on cognitiveclass.ai}
+	{IBM Developer Skills Network}
+\end{twenty}
+
+\newpage
+\makeprofile 
 \section{Interests}
 \\\\
-My main interest is learning physics. In my PhD project I focused on the development of experimental solid state physics specifically in the field of optical spectroscopy and decided to take it in hand with computational physics, developing my own codes and learning from existing codes. I consider numerical calculations in experimental physics are a powerful tool to understand the complexity in solid state and condensed matter physics. I consider myself an enthusiast of open-source code and software, and I am very committed to teaching my knowledge about it.
+In my research, I am deeply passionate about exploring the fascinating realm of solid-state physics and condensed matter. My primary focus encompasses both experimental investigations and the creation of open-source code to perform intricate numerical calculations. A key area of interest is the exploration of various spectroscopic techniques to delve into the intricate optical properties of semiconductors. Through these spectroscopies, I seek to unravel the underlying phenomena and gain profound insights into the behavior of materials at the quantum level.
+
+As a dedicated researcher, I am driven to push the boundaries of knowledge and understanding in the field. One of my key contributions lies in the development of innovative code that enables advanced analysis and the creation of numerical models. These tools are crucial in deciphering the complex data obtained from experimental studies, helping to extract meaningful physical interpretations and enriching our understanding of condensed matter systems.
+
+Furthermore, my passion for scientific computing and my expertise in programming languages like Python, Julia, and Fortran allow me to create robust and efficient computational tools for conducting in-depth simulations. I take immense pride in my ability to bridge the gap between theoretical concepts and practical experimentation, as this synergy fosters groundbreaking research and enhances the overall progress in the field.
+
+With each research endeavor, I aim to uncover new discoveries that not only advance the fundamental understanding of solid-state physics but also hold immense potential for real-world applications in the realm of information technologies and material science. By staying at the forefront of scientific developments and continuously honing my skills, I aspire to make significant contributions to the ever-evolving landscape of solid-state physics and condensed matter research.
 
 \end{document} 
