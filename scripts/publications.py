@@ -24,7 +24,6 @@ def extract_publications(bib_file):
                 title = entry['title']
             else:
                 title = ''
-            
             if 'author' in entry:
                 authors = entry['author']
                 # authors = modify_author_name(authors)

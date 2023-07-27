@@ -25,8 +25,8 @@
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=blue,
-    pdftitle={Overleaf Example},
-    pdfpagemode=FullScreen,
+    pdftitle={RUCO CV},
+    pdfpagemode=UseNone,
     }
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
